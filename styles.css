@@ -1,0 +1,58 @@
+*::before, *, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Rubik", sans-serif;
+}
+
+body {
+	background-color: hsl(228, 33%, 97%);
+	display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	min-height: 100dvh;
+}
+
+button {
+	background-color: hsl(238, 40%, 52%) !important;
+	border: none !important;
+	padding: 10px 25px !important;
+	font-family: "Rubik", sans-serif;
+	font-weight: 600 !important;
+	font-size: 1.1em !important;
+	max-height: 40px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: hsl(238, 40%, 59%) !important;
+	margin-block: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.comment {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+		gap: 15px;
+}
+
+.comment > img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.comment > textarea {
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-family: "Rubik", sans-serif;
+	resize: none;
+}
